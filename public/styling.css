@@ -1,0 +1,21 @@
+html {
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+  display: inline-block;
+}
+
+ul {
+  padding: 4px;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0f0;
+}
