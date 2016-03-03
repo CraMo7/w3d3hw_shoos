@@ -11,6 +11,11 @@ get("/"){erb(:homepage)}
 
 
 
+post("/preorder") do
+  @preorder = Preorder.new(params)
+  @preorder.save
+  erb(:confirmation)
+end
 
 
 get("/preorder") do
@@ -18,9 +23,6 @@ get("/preorder") do
 end
 
 get("/preorderslist") do
+  @preorders = Preorder.all
   erb(:preorderslist)
-end
-
-get("/confirmation") do
-  erb(:confirmation)
 end

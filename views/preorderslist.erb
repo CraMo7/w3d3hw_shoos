@@ -1,0 +1,16 @@
+<h4>All preorders:</h4>
+<% @preorders.each do |preorder| %>
+
+<p>Name:</p>
+<p><%= preorder.name %></p>
+
+<p>Address:</p>
+<p><%= preorder.address %></p>
+<p>Order:</p>
+<p>Shoe Size:</p>
+<p><%= preorder.shoe_size %></p>
+
+<p>Quantity:</p>
+<p><%= preorder.quantity %></p>
+
+<% end %>
